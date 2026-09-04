@@ -1,12 +1,12 @@
 cask "procyon" do
-  version "0.1.0-20"
-  sha256 "fb802d145481d82eecfeaa44aa6293e864930c6be4b10d7c72854fce88d2ec42"
+  version "0.1.0-21"
+  sha256 "021e62016075c4c9f67776560d0f61c1e61848d61b30fc1e34eb82c11d78e56b"
 
-  url "https://github.com/erikvullings/procyon/releases/download/v0.1.0-20/Procyon_0.1.0-20_universal.dmg"
+  url "https://github.com/erikvullings/procyon/releases/download/v0.1.0-21/Procyon_0.1.0-21_universal.dmg"
   name "Procyon"
   desc "Dual-pane file manager"
   homepage "https://github.com/erikvullings/procyon"
 
   app "Procyon.app"
-  binary "#{appdir}/Procyon.app/Contents/MacOS/Procyon", target: "procyon"
+  binary "#{appdir}/Procyon.app/Contents/Resources/procyon", target: "procyon"
 end
