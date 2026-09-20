@@ -1,23 +1,23 @@
 cask "procyon" do
-  os macos: "Procyon_0.1.0_universal.dmg", linux: "Procyon_0.1.0_amd64.AppImage"
+  os macos: "Procyon_0.1.1_universal.dmg", linux: "Procyon_0.1.1_amd64.AppImage"
 
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    sha256 "51c4eb821b46994fb0a98caf14ea3b26930542ad898ccb65b0ace1ae40a539f5"
+    sha256 "bbf4865444655b7d56d8f907c9efb7fc8e026857b916746f6e98906d4931aec3"
 
     app "Procyon.app"
     binary "#{appdir}/Procyon.app/Contents/Resources/procyon", target: "procyon"
   end
   on_linux do
-    sha256 "bed53345f26ee0201be82eacb8e3100370b65f8f4e956615cd01f9a4eb2f66c4"
+    sha256 "34cee0069fe32983266ef43cc563f8f39acb903ca53867606a2fcf43ca3c4222"
 
     depends_on arch: :x86_64
 
-    app_image "Procyon_0.1.0_amd64.AppImage", target: "Procyon.AppImage"
+    app_image "Procyon_0.1.1_amd64.AppImage", target: "Procyon.AppImage"
   end
 
-  url "https://github.com/erikvullings/procyon/releases/download/v0.1.0/#{os}"
+  url "https://github.com/erikvullings/procyon/releases/download/v0.1.1/#{os}"
   name "Procyon"
   desc "Dual-pane file manager"
   homepage "https://github.com/erikvullings/procyon"
