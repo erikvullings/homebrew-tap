@@ -4,13 +4,13 @@ cask "procyon" do
   version "0.4.2"
 
   on_macos do
-    sha256 "87d83275890886a2cac5b75729c76225dd34a50e338298b4c8381a0f2571058f"
+    sha256 "301c89d0ccaa702aae044ecfaaa9cbe4daf617c0eec79741c8c941341320f237"
 
     app "Procyon.app"
     binary "#{appdir}/Procyon.app/Contents/Resources/procyon", target: "procyon"
   end
   on_linux do
-    sha256 "ae51f3500b3c0faa9939b743fd452333afc5b074368d667ce9e7a8253526f76e"
+    sha256 "b79c309a5da27caf1e946d7b08ed027eda9003f270f10b03314920ac12a56913"
 
     depends_on arch: :x86_64
 
